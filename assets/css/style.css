@@ -1,78 +1,108 @@
+:root {
+  --primary: #007bff;
+  --dark: #212529;
+  --light: #f8f9fa;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-  background-color: #f8f9fa;
-  color: #333;
-  line-height: 1.6;
+  background-color: var(--light);
+  color: var(--dark);
+  line-height: 1.7;
 }
 
 .container {
   width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px 0;
+  max-width: 960px;
+  margin: auto;
+  padding: 60px 0;
 }
 
 header.header {
-  background-color: #007bff;
-  color: white;
-  padding: 40px 0;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff;
   text-align: center;
+  padding: 80px 20px;
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
 header p {
   font-size: 1.2rem;
-  font-weight: 300;
+  opacity: 0.85;
 }
 
 section {
-  margin: 40px 0;
+  margin-bottom: 60px;
 }
 
 h2 {
-  color: #007bff;
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #007bff;
+  font-size: 2rem;
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
   display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 ul {
   list-style-type: disc;
-  margin-left: 20px;
+  padding-left: 25px;
 }
 
-.project {
-  background-color: #ffffff;
-  padding: 20px;
+.project, .code-sample {
+  background: #fff;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
   margin-bottom: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+}
+
+.project:hover, .code-sample:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+
+code {
+  font-family: 'Fira Code', monospace;
+  background: #f1f3f5;
+  padding: 10px;
+  display: block;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  border-radius: 6px;
+  margin-top: 10px;
 }
 
 a {
-  color: #007bff;
+  color: var(--primary);
   text-decoration: none;
+  font-weight: 500;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
+.contact p {
+  margin-bottom: 10px;
+}
+
 footer.footer {
-  background-color: #343a40;
-  color: white;
+  background: #212529;
+  color: #dee2e6;
   text-align: center;
-  padding: 20px 0;
+  padding: 30px 10px;
+  font-size: 0.9rem;
 }

@@ -3,14 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Emmanuel Santos Jr. | Full Stack Developer</title>
+  <title>Emmanuel Santos Jr. | Web Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <header class="header">
     <div class="container">
       <h1>Emmanuel Santos Jr.</h1>
-      <p>Junior Full Stack Developer</p>
+      <p>Web & Full Stack Developer | Passionate About Clean Code & Scalable Systems</p>
     </div>
   </header>
 
@@ -18,9 +21,7 @@
     <div class="container">
       <h2>About Me</h2>
       <p>
-        I am a recent BSIT graduate majoring in Web and Mobile App Development,
-        with hands-on internship experience as a Full Stack Developer at DevTeam Outsourcing Inc.
-        I specialize in HTML, CSS, PHP, and Laravel, and I’m eager to contribute to impactful web projects.
+        I’m a BSIT graduate specialized in Web and Mobile App Development. During my internship at DevTeam Outsourcing Inc., I collaborated on full stack projects using HTML, CSS, PHP, and Laravel. I’m passionate about writing clean, maintainable code and continuously learning to become a world-class software developer.
       </p>
     </div>
   </section>
@@ -29,11 +30,11 @@
     <div class="container">
       <h2>Skills</h2>
       <ul>
-        <li>HTML & CSS</li>
-        <li>PHP & Laravel</li>
-        <li>Basic JavaScript</li>
-        <li>Git & GitHub</li>
-        <li>Responsive Web Design</li>
+        <li>Frontend: HTML5, CSS3, SCSS, JavaScript (ES6+), Bootstrap</li>
+        <li>Backend: PHP, Laravel, RESTful APIs</li>
+        <li>Version Control: Git, GitHub</li>
+        <li>Database: MySQL, Eloquent ORM</li>
+        <li>Tools: VS Code, Postman, XAMPP</li>
       </ul>
     </div>
   </section>
@@ -42,12 +43,27 @@
     <div class="container">
       <h2>Projects</h2>
       <div class="project">
-        <h3>Internship Tasks</h3>
-        <p>Worked on front-end updates and backend features for internal tools using Laravel and PHP.</p>
+        <h3>DevTeam Internship System</h3>
+        <p>Built internal tools to streamline task assignments and code review processes. Used Laravel for backend and Tailwind for styling UI components. Integrated authentication, validation, and role-based access control.</p>
       </div>
       <div class="project">
-        <h3>Zuitt Workshop Projects</h3>
-        <p>Created basic CRUD applications and dashboards during Zuitt’s Basic Development and Data Visualization workshops.</p>
+        <h3>Zuitt Workshop Capstone</h3>
+        <p>Created a user management system with login, CRUD operations, and responsive dashboard. Learned to optimize file structure and implement reusable components.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="code-examples">
+    <div class="container">
+      <h2>Code Sample</h2>
+      <div class="code-sample">
+        <h3>Laravel Route Example</h3>
+        <code>
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index']);
+    Route::resource('/users', UserController::class);
+});
+        </code>
       </div>
     </div>
   </section>
@@ -56,9 +72,9 @@
     <div class="container">
       <h2>Certifications</h2>
       <ul>
-        <li>Cybersecurity Awareness - LSPU (2024)</li>
-        <li>Data Visualization Workshop - Zuitt (2024)</li>
-        <li>Basic Development Workshop - Zuitt (2024)</li>
+        <li>Cybersecurity Awareness – LSPU (2024)</li>
+        <li>Data Visualization Workshop – Zuitt (2024)</li>
+        <li>Basic Web Development – Zuitt (2024)</li>
       </ul>
     </div>
   </section>
@@ -69,12 +85,13 @@
       <p>Email: <a href="mailto:es4390221@gmail.com">es4390221@gmail.com</a></p>
       <p>Phone: +63 961-534-7640</p>
       <p>Location: Brgy. Caballero, Famy, Laguna</p>
+      <p>GitHub: <a href="https://github.com/EmmanSantos1" target="_blank">github.com/EmmanSantos1</a></p>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Emmanuel Santos Jr. All rights reserved.</p>
+      <p>&copy; 2025 Emmanuel Santos Jr. | Built with ❤️ and clean code.</p>
     </div>
   </footer>
 </body>
