@@ -15,9 +15,7 @@
 
   <!-- AOS Animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
 </head>
-
 <body>
   <header>
     <h1>Emmanuel Santos Jr.</h1>
@@ -39,23 +37,14 @@
         <p>GitHub: <a href="https://github.com/EmmanSantos1" target="_blank">EmmanSantos1</a></p>
       </section>
 
-      <section data-aos="fade-right">
+        <section data-aos="fade-right">
         <h2>Skills</h2>
-        <?php
-        $skills = [
-          ['name' => 'HTML/CSS/Livewire', 'percent' => '80%'],
-          ['name' => 'Laravel/PHP', 'percent' => '80%'],
-          ['name' => 'Alpinejs/JavaScript', 'percent' => '70%'],
-          ['name' => 'MySQL', 'percent' => '80%'],
-          ['name' => 'Git/GitHub', 'percent' => '80%'],
-        ];
-        foreach ($skills as $skill) {
-          echo '<div class="skill"><span>' . $skill['name'] . '</span>';
-          echo '<div class="bar"><div class="fill" data-percent="' . $skill['percent'] . '"></div></div></div>';
-        }
-        ?>
+        <div class="skill"><span>HTML/CSS/Livewire</span><div class="bar"><div class="fill" data-percent="80%"></div></div></div>
+        <div class="skill"><span>Laravel/PHP</span><div class="bar"><div class="fill" data-percent="80%"></div></div></div>
+        <div class="skill"><span>Alpinejs/JavaScript</span><div class="bar"><div class="fill" data-percent="70%"></div></div></div>
+        <div class="skill"><span>MySQL</span><div class="bar"><div class="fill" data-percent="80%"></div></div></div>
+        <div class="skill"><span>Git/GitHub</span><div class="bar"><div class="fill" data-percent="80%"></div></div></div>
       </section>
-
       <section data-aos="fade-right">
         <h2>Certifications</h2>
         <ul>
