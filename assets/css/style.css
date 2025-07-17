@@ -1,108 +1,134 @@
 :root {
-  --primary: #007bff;
-  --dark: #212529;
-  --light: #f8f9fa;
-}
+      --primary: #007bff;
+      --dark: #212529;
+      --light: #f8f9fa;
+    }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
 
-body {
-  background-color: var(--light);
-  color: var(--dark);
-  line-height: 1.7;
-}
+    body {
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.7;
+    }
 
-.container {
-  width: 90%;
-  max-width: 960px;
-  margin: auto;
-  padding: 60px 0;
-}
+    .container {
+      width: 90%;
+      max-width: 960px;
+      margin: auto;
+      padding: 60px 0;
+    }
 
-header.header {
-  background: linear-gradient(135deg, #007bff, #0056b3);
-  color: #fff;
-  text-align: center;
-  padding: 80px 20px;
-}
+    header.header {
+      background: linear-gradient(135deg, #007bff, #0056b3);
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
 
-header h1 {
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
+    header h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
 
-header p {
-  font-size: 1.2rem;
-  opacity: 0.85;
-}
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.85;
+    }
 
-section {
-  margin-bottom: 60px;
-}
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #fff;
+      color: #007bff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
 
-h2 {
-  font-size: 2rem;
-  color: var(--primary);
-  border-bottom: 2px solid var(--primary);
-  display: inline-block;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
-}
+    .btn:hover {
+      background-color: #e2e6ea;
+    }
 
-ul {
-  list-style-type: disc;
-  padding-left: 25px;
-}
+    section {
+      margin-bottom: 60px;
+    }
 
-.project, .code-sample {
-  background: #fff;
-  padding: 24px;
-  border-radius: 10px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-  margin-bottom: 20px;
-}
+    h2 {
+      font-size: 2rem;
+      color: var(--primary);
+      border-bottom: 2px solid var(--primary);
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
 
-.project:hover, .code-sample:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
-}
+    ul {
+      list-style-type: disc;
+      padding-left: 25px;
+    }
 
-code {
-  font-family: 'Fira Code', monospace;
-  background: #f1f3f5;
-  padding: 10px;
-  display: block;
-  white-space: pre-wrap;
-  overflow-x: auto;
-  border-radius: 6px;
-  margin-top: 10px;
-}
+    .project, .code-sample, .live-project {
+      background: #fff;
+      padding: 24px;
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      margin-bottom: 20px;
+    }
 
-a {
-  color: var(--primary);
-  text-decoration: none;
-  font-weight: 500;
-}
+    .project:hover, .code-sample:hover, .live-project:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+    }
 
-a:hover {
-  text-decoration: underline;
-}
+    code {
+      font-family: 'Fira Code', monospace;
+      background: #f1f3f5;
+      padding: 10px;
+      display: block;
+      white-space: pre-wrap;
+      overflow-x: auto;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
 
-.contact p {
-  margin-bottom: 10px;
-}
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
 
-footer.footer {
-  background: #212529;
-  color: #dee2e6;
-  text-align: center;
-  padding: 30px 10px;
-  font-size: 0.9rem;
-}
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact p {
+      margin-bottom: 10px;
+    }
+
+    footer.footer {
+      background: #212529;
+      color: #dee2e6;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
