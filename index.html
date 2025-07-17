@@ -4,95 +4,109 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emmanuel Santos Jr. | Web Developer Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <h1>Emmanuel Santos Jr.</h1>
-      <p>Web & Full Stack Developer | Passionate About Clean Code & Scalable Systems</p>
-    </div>
+
+  <header>
+    <h1>Emmanuel Santos Jr.</h1>
+    <p>Web & Full Stack Developer | Clean Code Advocate</p>
+    <a href="resume.pdf" class="btn" download>📄 Download Resume</a>
   </header>
 
-  <section class="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I’m a BSIT graduate specialized in Web and Mobile App Development. During my internship at DevTeam Outsourcing Inc., I collaborated on full stack projects using HTML, CSS, PHP, and Laravel. I’m passionate about writing clean, maintainable code and continuously learning to become a world-class software developer.
-      </p>
-    </div>
-  </section>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside>
+      <section data-aos="fade-right">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:es4390221@gmail.com">es4390221@gmail.com</a></p>
+        <p>Phone: +63 961-534-7640</p>
+        <p>Location: Famy, Laguna</p>
+        <p>GitHub: <a href="https://github.com/EmmanSantos1" target="_blank">EmmanSantos1</a></p>
+      </section>
 
-  <section class="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul>
-        <li>Frontend: HTML5, CSS3, SCSS, JavaScript (ES6+), Bootstrap</li>
-        <li>Backend: PHP, Laravel, RESTful APIs</li>
-        <li>Version Control: Git, GitHub</li>
-        <li>Database: MySQL, Eloquent ORM</li>
-        <li>Tools: VS Code, Postman, XAMPP</li>
-      </ul>
-    </div>
-  </section>
+      <section data-aos="fade-right">
+        <h2>Skills</h2>
+        <div class="skill"><span>HTML/CSS</span><div class="bar"><div class="fill" data-percent="95%"></div></div></div>
+        <div class="skill"><span>Laravel/PHP</span><div class="bar"><div class="fill" data-percent="85%"></div></div></div>
+        <div class="skill"><span>JavaScript</span><div class="bar"><div class="fill" data-percent="80%"></div></div></div>
+        <div class="skill"><span>MySQL</span><div class="bar"><div class="fill" data-percent="75%"></div></div></div>
+        <div class="skill"><span>Git/GitHub</span><div class="bar"><div class="fill" data-percent="85%"></div></div></div>
+      </section>
 
-  <section class="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>DevTeam Internship System</h3>
-        <p>Built internal tools to streamline task assignments and code review processes. Used Laravel for backend and Tailwind for styling UI components. Integrated authentication, validation, and role-based access control.</p>
-      </div>
-      <div class="project">
-        <h3>Zuitt Workshop Capstone</h3>
-        <p>Created a user management system with login, CRUD operations, and responsive dashboard. Learned to optimize file structure and implement reusable components.</p>
-      </div>
-    </div>
-  </section>
+      <section data-aos="fade-right">
+        <h2>Certifications</h2>
+        <ul>
+          <li>Cybersecurity Awareness – LSPU (2024)</li>
+          <li>Data Visualization Workshop – Zuitt (2024)</li>
+          <li>Basic Web Development – Zuitt (2024)</li>
+        </ul>
+      </section>
+    </aside>
 
-  <section class="code-examples">
-    <div class="container">
-      <h2>Code Sample</h2>
-      <div class="code-sample">
-        <h3>Laravel Route Example</h3>
-        <code>
+    <!-- Main content -->
+    <main>
+      <section class="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <div class="card">
+          <p>I’m a BSIT graduate specialized in Web and Mobile App Development. During my internship at DevTeam Outsourcing Inc., I worked on full stack applications using Laravel, PHP, HTML, and CSS. I'm committed to writing clean, scalable, and maintainable code.</p>
+        </div>
+      </section>
+
+      <section class="projects" data-aos="fade-up">
+        <h2>Projects</h2>
+        <div class="card">
+          <h3>DevTeam Internship System</h3>
+          <p>Developed internal tools for task management and code reviews using Laravel and Tailwind CSS. Integrated role-based access, validation, and secure authentication.</p>
+        </div>
+        <div class="card">
+          <h3>Zuitt Capstone</h3>
+          <p>Created a responsive user management dashboard with CRUD features and secure login. Focused on file structure and reusable UI components.</p>
+        </div>
+      </section>
+
+      <section class="live-projects" data-aos="fade-up">
+        <h2>Live Projects</h2>
+        <div class="card">
+          <h3>Personal Portfolio Website</h3>
+          <p>A modern, responsive portfolio built with HTML and CSS. Deployed via GitHub Pages.</p>
+          <p><a href="https://emmansantos1.github.io/" target="_blank">🌐 View Live</a> | <a href="https://github.com/EmmanSantos1" target="_blank">💻 View Code</a></p>
+        </div>
+      </section>
+
+      <section class="code-examples" data-aos="fade-up">
+        <h2>Code Sample</h2>
+        <div class="card">
+          <h3>Laravel Route Example</h3>
+          <code>
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index']);
     Route::resource('/users', UserController::class);
 });
-        </code>
-      </div>
-    </div>
-  </section>
+          </code>
+        </div>
+      </section>
+    </main>
+  </div>
 
-  <section class="certifications">
-    <div class="container">
-      <h2>Certifications</h2>
-      <ul>
-        <li>Cybersecurity Awareness – LSPU (2024)</li>
-        <li>Data Visualization Workshop – Zuitt (2024)</li>
-        <li>Basic Web Development – Zuitt (2024)</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:es4390221@gmail.com">es4390221@gmail.com</a></p>
-      <p>Phone: +63 961-534-7640</p>
-      <p>Location: Brgy. Caballero, Famy, Laguna</p>
-      <p>GitHub: <a href="https://github.com/EmmanSantos1" target="_blank">github.com/EmmanSantos1</a></p>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Emmanuel Santos Jr. | Built with ❤️ and clean code.</p>
-    </div>
+  <footer>
+    <p>&copy; 2025 Emmanuel Santos Jr. | Built with ❤️ and clean code.</p>
   </footer>
-</body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800 });
+
+    // Animate skill bars on load
+    window.addEventListener('load', () => {
+      document.querySelectorAll('.fill').forEach(el => {
+        el.style.width = el.getAttribute('data-percent');
+      });
+    });
+  </script>
+  </body>
 </html>
