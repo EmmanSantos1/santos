@@ -1,11 +1,11 @@
 :root {
-  --primary: #0056b3;       /* Royal blue */
-  --secondary: #6c757d;     /* Cool gray */
-  --accent: #0d6efd;        /* Bootstrap blue (for buttons) */
-  --dark: #212529;          /* Dark gray font */
-  --light: #f8f9fa;         /* Off-white background */
-  --text-dark: #212529;     /* Main text color */
-  --text-light: #ffffff;    /* White text for contrast */
+  --primary: #0056b3;
+  --secondary: #6c757d;
+  --accent: #0d6efd;
+  --dark: #212529;
+  --light: #f8f9fa;
+  --text-dark: #212529;
+  --text-light: #ffffff;
 }
 
 * {
@@ -24,36 +24,40 @@ body {
   color: var(--text-dark);
   line-height: 1.7;
   transition: background-color 0.4s, color 0.4s;
+  padding: 0 15px;
 }
 
 header {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: var(--text-light);
-  padding: 60px 20px;
+  padding: 40px 15px;
   text-align: center;
   transition: background 0.5s;
 }
 
 header h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 
 header p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   opacity: 0.9;
 }
 
 .btn {
-  margin-top: 20px;
+  margin: 10px auto;
   background: var(--accent);
   color: var(--text-light);
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
-  display: inline-block;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
   cursor: pointer;
 }
 
@@ -65,39 +69,33 @@ header p {
 
 .container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 30px;
   max-width: 1200px;
   margin: auto;
-  padding: 40px 20px;
-  gap: 40px;
+  padding: 30px 0;
 }
 
-aside {
-  flex: 1 1 280px;
-  position: sticky;
-  top: 20px;
-  align-self: start;
-}
-
+aside,
 main {
-  flex: 3 1 600px;
+  width: 100%;
 }
 
 section {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: var(--primary);
   border-left: 6px solid var(--accent);
-  padding-left: 15px;
-  margin-bottom: 20px;
+  padding-left: 12px;
+  margin-bottom: 15px;
 }
 
 .card {
   background: #ffffff;
-  padding: 20px;
+  padding: 16px;
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
@@ -127,6 +125,8 @@ a:hover {
 
 .skill span {
   font-weight: 600;
+  display: inline-block;
+  margin-bottom: 5px;
 }
 
 .skill i {
@@ -156,6 +156,18 @@ footer {
   font-size: 0.9rem;
 }
 
+code {
+  display: block;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 6px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  font-size: 0.9rem;
+  font-family: 'Fira Code', monospace;
+}
+
+/* DARK MODE */
 .dark body {
   background-color: #121212;
   color: var(--text-light);
@@ -171,16 +183,48 @@ footer {
   color: var(--dark);
 }
 
-@media (max-width: 768px) {
+/* IMAGE AND MEDIA FIXES */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* DESKTOP STYLES */
+@media (min-width: 768px) {
   .container {
-    flex-direction: column;
+    flex-direction: row;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+
+  aside {
+    flex: 1 1 280px;
+    position: sticky;
+    top: 20px;
+    align-self: start;
+  }
+
+  main {
+    flex: 3 1 600px;
   }
 
   header h1 {
-    font-size: 2rem;
+    font-size: 3rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
   }
 
   h2 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    display: inline-block;
+    width: auto;
+    margin: 20px 10px 0 10px;
   }
 }
