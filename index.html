@@ -24,7 +24,7 @@
 
   <header>
     <h1><i class="fas fa-terminal"></i> Emmanuel Santos Jr.</h1>
-    <p><i class="fas fa-code"></i> Web & Full Stack Developer | Clean Code Advocate</p>
+    <p><i class="fas fa-code"></i> Full Stack Developer | Clean Code Advocate</p>
     <a href="resume.pdf" class="btn" download><i class="fas fa-file-download"></i> Download Resume</a>
     <br />
     <button class="btn" @click="darkMode = !darkMode">
@@ -39,22 +39,26 @@
         <h2><i class="fas fa-envelope"></i> Contact</h2>
         <p>Email: <a href="mailto:emmanueljrsantos6@gmail.com">emmanueljrsantos6@gmail.com</a></p>
         <p>Phone: +63 961-534-7640</p>
-        <p>Location: Famy, Laguna</p>
+        <p>Location: Famy, Philippines</p>
         <p>GitHub: <a href="https://github.com/EmmanSantos1" target="_blank">EmmanSantos1</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/emmanuel-santos-b35b08375" target="_blank">emmanuel-santos</a></p>
+        <p>Portfolio: <a href="https://emmansantos1.github.io/santos/" target="_blank">emmansantos1.github.io/santos</a></p>
       </section>
 
       <section data-aos="fade-right">
         <h2><i class="fas fa-tools"></i> Skills</h2>
-        <div class="skill"><i class="fab fa-html5"></i> <span>HTML/CSS/Livewire</span><div class="bar"><div class="fill" data-percent="80%"></div></div></div>
-        <div class="skill"><i class="fab fa-php"></i> <span>Laravel/PHP</span><div class="bar"><div class="fill" data-percent="80%"></div></div></div>
-        <div class="skill"><i class="fab fa-js"></i> <span>Alpinejs/JavaScript</span><div class="bar"><div class="fill" data-percent="70%"></div></div></div>
+        <div class="skill"><i class="fab fa-html5"></i> <span>HTML / Tailwind CSS</span><div class="bar"><div class="fill" data-percent="85%"></div></div></div>
+        <div class="skill"><i class="fab fa-php"></i> <span>Laravel / Livewire / PHP</span><div class="bar"><div class="fill" data-percent="85%"></div></div></div>
+        <div class="skill"><i class="fab fa-js"></i> <span>JavaScript / Alpine.js</span><div class="bar"><div class="fill" data-percent="75%"></div></div></div>
         <div class="skill"><i class="fas fa-database"></i> <span>MySQL</span><div class="bar"><div class="fill" data-percent="80%"></div></div></div>
-        <div class="skill"><i class="fab fa-git-alt"></i> <span>Git/GitHub</span><div class="bar"><div class="fill" data-percent="80%"></div></div></div>
+        <div class="skill"><i class="fab fa-git-alt"></i> <span>Git / GitHub</span><div class="bar"><div class="fill" data-percent="85%"></div></div></div>
+        <div class="skill"><i class="fas fa-bug"></i> <span>Debugging & Testing</span><div class="bar"><div class="fill" data-percent="70%"></div></div></div>
       </section>
 
       <section data-aos="fade-right">
         <h2><i class="fas fa-certificate"></i> Certifications</h2>
         <ul>
+          <li>GIT – Simplilearn (2025)</li>
           <li>Cybersecurity Awareness – LSPU (2024)</li>
           <li>Data Visualization Workshop – Zuitt (2024)</li>
           <li>Basic Web Development – Zuitt (2024)</li>
@@ -67,8 +71,31 @@
         <h2><i class="fas fa-user"></i> About Me</h2>
         <div class="card">
           <p>
-            I’m a BSIT graduate specialized in Web and Mobile App Development. During my internship at DevTeam Outsourcing Inc., I worked on full stack applications using Laravel, PHP, HTML, and CSS. I'm committed to writing clean, scalable, and maintainable code.
+            I'm a technology professional versed in full stack development, prepared for impactful contributions. I specialize in Laravel, Livewire, Tailwind CSS, and MySQL. I'm known for my adaptability, clean code practices, and passion for improving user experiences.
           </p>
+        </div>
+      </section>
+
+      <section class="experience" data-aos="fade-up">
+        <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+
+        <div class="card">
+          <h3>Junior Developer – DevTeam Outsourcing Inc. (Mar 2023 – Mar 2024)</h3>
+          <ul>
+            <li>Built responsive full stack applications using Laravel, Livewire, and Alpine.js.</li>
+            <li>Managed databases and handled CRUD operations using MySQL.</li>
+            <li>Implemented form validation, error handling, and user-friendly UI.</li>
+            <li>Used Trello for task tracking and GitHub for version control.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Crew Member – Jollibee Foods Corporation (Jul 2019 – Mar 2024)</h3>
+          <ul>
+            <li>Delivered high-quality customer service in fast-paced environments.</li>
+            <li>Trained new employees and ensured compliance with safety protocols.</li>
+            <li>Maintained cleanliness and handled food preparation during peak hours.</li>
+          </ul>
         </div>
       </section>
 
@@ -80,18 +107,18 @@
           </h3>
           <div x-show="open" x-transition>
             <p>
-              Developed internal tools for task management and code reviews using Laravel and Tailwind CSS. Integrated role-based access, validation, and secure authentication.
+              Internal tools built using Laravel and Tailwind CSS with role-based access, validation, and authentication.
             </p>
           </div>
         </div>
 
         <div class="card" x-data="{ open: false }">
           <h3 @click="open = !open" style="cursor: pointer;">
-            <i class="fas fa-database"></i> Zuitt Capstone 🔽
+            <i class="fas fa-database"></i> Zuitt Capstone Project 🔽
           </h3>
           <div x-show="open" x-transition>
             <p>
-              Created a responsive user management dashboard with CRUD features and secure login. Focused on file structure and reusable UI components.
+              Responsive admin dashboard with CRUD, reusable components, and secure login built with Laravel.
             </p>
           </div>
         </div>
@@ -100,10 +127,10 @@
       <section class="live-projects" data-aos="fade-up">
         <h2><i class="fas fa-globe"></i> Live Projects</h2>
         <div class="card">
-          <h3>Personal Portfolio Website</h3>
-          <p>A modern, responsive portfolio built with HTML and CSS. Deployed via GitHub Pages.</p>
+          <h3>Portfolio Website</h3>
+          <p>Modern portfolio built with HTML and Tailwind CSS, deployed on GitHub Pages.</p>
           <p>
-            <a href="https://emmansantos1.github.io/" target="_blank">🌐 View Live</a> |
+            <a href="https://emmansantos1.github.io/santos/" target="_blank">🌐 View Live</a> |
             <a href="https://github.com/EmmanSantos1" target="_blank">💻 View Code</a>
           </p>
         </div>
